@@ -30,6 +30,9 @@ Electronic Check has the highest churn rate. Automated payment methods (Credit C
 
 Action: Promote automated billing to reduce manual payment decisions and churn driven by payment friction.
 
+### Visualización del Análisis
+![Dashboard de Retención](viz/dashboard_churn.png)
+
 📂 Repository Structure
 
 00_setup_schema.sql – Table definitions and data types
