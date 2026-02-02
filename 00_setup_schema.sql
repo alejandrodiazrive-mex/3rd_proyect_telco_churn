@@ -18,6 +18,6 @@ CREATE TABLE telco_churn (
     PaperlessBilling VARCHAR(5),
     PaymentMethod VARCHAR(30),
     MonthlyCharges DECIMAL(10,2),
-    TotalCharges VARCHAR(20), -- A veces viene con espacios, la limpiaremos luego
+    TotalCharges VARCHAR(20), -- Staged as VARCHAR to handle whitespace anomalies during ingestion; cast to DECIMAL performed in downstream cleaning.
     Churn VARCHAR(5)
 );
