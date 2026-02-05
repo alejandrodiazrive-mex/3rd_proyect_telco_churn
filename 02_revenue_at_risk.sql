@@ -3,7 +3,7 @@ SELECT
     COUNT(*) as total_clients,
     ROUND(AVG(MonthlyCharges), 2) as avg_monthly_bill,
     ROUND(SUM(MonthlyCharges), 2) as total_monthly_revenue,
-    -- ¿Qué % de la lana total representa este grupo?
+    -- Calculate the revenue share percentage for this group
     ROUND(
         (SUM(MonthlyCharges) * 100.0 / SUM(SUM(MonthlyCharges)) OVER()), 
         2
